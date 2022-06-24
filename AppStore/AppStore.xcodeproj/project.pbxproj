@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A334FA372864BB6100DD17D6 /* AppContensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A334FA362864BB6100DD17D6 /* AppContensView.swift */; };
 		A374E2FD2864519600B9EDF2 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A374E2FC2864519600B9EDF2 /* TodayView.swift */; };
 		A374E2FF2864525700B9EDF2 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A374E2FE2864525700B9EDF2 /* GameView.swift */; };
 		A3CBC9F228622242006A4ACD /* AppStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CBC9F128622242006A4ACD /* AppStoreApp.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A334FA362864BB6100DD17D6 /* AppContensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContensView.swift; sourceTree = "<group>"; };
 		A374E2FC2864519600B9EDF2 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		A374E2FE2864525700B9EDF2 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		A3CBC9EE28622242006A4ACD /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +43,7 @@
 			children = (
 				A374E2FC2864519600B9EDF2 /* TodayView.swift */,
 				A374E2FE2864525700B9EDF2 /* GameView.swift */,
+				A334FA362864BB6100DD17D6 /* AppContensView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3CBC9F428622242006A4ACD /* MainView.swift in Sources */,
+				A334FA372864BB6100DD17D6 /* AppContensView.swift in Sources */,
 				A374E2FD2864519600B9EDF2 /* TodayView.swift in Sources */,
 				A374E2FF2864525700B9EDF2 /* GameView.swift in Sources */,
 				A3CBC9F228622242006A4ACD /* AppStoreApp.swift in Sources */,
