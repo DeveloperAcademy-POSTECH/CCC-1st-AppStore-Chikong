@@ -17,7 +17,23 @@ struct GameView: View {
                             AppContensView()
                         }
                     }
+                    .padding(.horizontal)
                 }
+                
+                Divider()
+                    .padding([.leading, .trailing])
+                HStack {
+                    Text("무료 게임 순위")
+                        .font(.title)
+                        .fontWeight(.heavy)
+                    Spacer()
+                    
+                    Button("모두 보기") {}
+                }
+                .padding([.leading, .trailing])
+                
+                AppRankView()
+                
                 .navigationTitle("게임")
                 .navigationBarItems(trailing: Image(systemName: "person.circle"))
             }

@@ -24,7 +24,6 @@ struct AppContensView: View {
                 .cornerRadius(10)
                 .frame(maxWidth: UIScreen.main.bounds.width - 50, maxHeight: UIScreen.main.bounds.height / 4)
         }
-        .padding([.leading, .bottom])
     }
 }
 

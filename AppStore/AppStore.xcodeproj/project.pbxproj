@@ -14,6 +14,7 @@
 		A3CBC9F428622242006A4ACD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CBC9F328622242006A4ACD /* MainView.swift */; };
 		A3CBC9F628622244006A4ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CBC9F528622244006A4ACD /* Assets.xcassets */; };
 		A3CBC9F928622244006A4ACD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CBC9F828622244006A4ACD /* Preview Assets.xcassets */; };
+		A3E955212865C10B00B6068D /* AppRankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E955202865C10B00B6068D /* AppRankView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A3CBC9F328622242006A4ACD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A3CBC9F528622244006A4ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3CBC9F828622244006A4ACD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3E955202865C10B00B6068D /* AppRankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRankView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 				A374E2FC2864519600B9EDF2 /* TodayView.swift */,
 				A374E2FE2864525700B9EDF2 /* GameView.swift */,
 				A334FA362864BB6100DD17D6 /* AppContensView.swift */,
+				A3E955202865C10B00B6068D /* AppRankView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				A3CBC9F428622242006A4ACD /* MainView.swift in Sources */,
 				A334FA372864BB6100DD17D6 /* AppContensView.swift in Sources */,
+				A3E955212865C10B00B6068D /* AppRankView.swift in Sources */,
 				A374E2FD2864519600B9EDF2 /* TodayView.swift in Sources */,
 				A374E2FF2864525700B9EDF2 /* GameView.swift in Sources */,
 				A3CBC9F228622242006A4ACD /* AppStoreApp.swift in Sources */,
