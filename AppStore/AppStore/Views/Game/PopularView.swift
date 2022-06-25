@@ -26,9 +26,13 @@ struct PopularView: View {
         
         ScrollView(.vertical, showsIndicators: false) {
             if selectedPickerIndex == 0 {
-                Text("hello")
+                ForEach(0..<100) { _ in
+                    FreeAppView()
+                }
             } else {
-                Text("game")
+                ForEach(0..<100) { _ in
+                    PriceAppView()
+                }
             }
         }
     }

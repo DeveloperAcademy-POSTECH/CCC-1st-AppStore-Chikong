@@ -10,7 +10,7 @@ import SwiftUI
 struct AppRankView: View {
     var body: some View {
         HStack {
-            Image(systemName: "plus")
+            Image(systemName: "gamecontroller.fill")
 
             Spacer()
             

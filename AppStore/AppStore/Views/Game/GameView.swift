@@ -30,7 +30,6 @@ struct GameView: View {
                     
                     NavigationLink("모두 보기", destination: PopularView())
                         .foregroundColor(Color(.systemBlue))
-//                    Button("모두 보기") {}
                 }
                 .padding([.leading, .trailing])
                 
@@ -38,8 +37,12 @@ struct GameView: View {
                     HStack {
                         ForEach(0..<6) { _ in
                             VStack {
-                                ForEach(0..<3) { _ in
+                                ForEach(0..<3) { idx in
                                     AppRankView()
+                                    if idx != 2 {
+                                        Divider()
+                                            .padding()
+                                    }
                                 }
                                 
                             }
