@@ -24,14 +24,17 @@ struct PopularView: View {
         .background(Color(.systemGray6))
         .frame(alignment: .topLeading)
         
-        ScrollView(.vertical, showsIndicators: false) {
-            if selectedPickerIndex == 0 {
-                ForEach(0..<100) { _ in
-                    FreeAppView()
+        switch selectedPickerIndex {
+        case 0:
+            ScrollView(.vertical, showsIndicators: false) {
+                ForEach(0..<100) { rank in
+                    FreeAppView(rank: rank)
                 }
-            } else {
-                ForEach(0..<100) { _ in
-                    PriceAppView()
+            }
+        default:
+            ScrollView(.vertical, showsIndicators: false) {
+                ForEach(0..<100) { rank in
+                    PriceAppView(rank: rank)
                 }
             }
         }

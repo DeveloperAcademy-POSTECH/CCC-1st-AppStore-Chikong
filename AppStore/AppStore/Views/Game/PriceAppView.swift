@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PriceAppView: View {
+    let rank: Int
+
     var body: some View {
         HStack {
             Image(systemName: "gamecontroller.fill")
@@ -15,7 +17,7 @@ struct PriceAppView: View {
             Spacer()
             
             VStack {
-                Text("1")
+                Text("\(rank + 1)")
                     .font(.title3)
                 Spacer()
             }
@@ -38,7 +40,7 @@ struct PriceAppView: View {
                         .frame(width: 75, height: 30)
                         .foregroundColor(Color(.systemGray6))
                         .overlay {
-                            Text("₩3900")
+                            Text("₩ \(Int.random(in: 1000..<10000))")
                         }
                 }
                 
@@ -48,11 +50,5 @@ struct PriceAppView: View {
             }
         }
         .padding([.leading, .trailing])
-    }
-}
-
-struct PriceAppView_Previews: PreviewProvider {
-    static var previews: some View {
-        PriceAppView()
     }
 }

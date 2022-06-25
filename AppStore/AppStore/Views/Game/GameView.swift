@@ -22,6 +22,7 @@ struct GameView: View {
                 
                 Divider()
                     .padding([.leading, .trailing])
+                
                 HStack {
                     Text("무료 게임 순위")
                         .font(.title)
@@ -44,7 +45,6 @@ struct GameView: View {
                                             .padding()
                                     }
                                 }
-                                
                             }
                         }
                     }

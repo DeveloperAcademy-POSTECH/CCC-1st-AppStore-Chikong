@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FreeAppView: View {
+    let rank: Int
+    
     var body: some View {
         HStack {
             Image(systemName: "gamecontroller.fill")
@@ -15,7 +17,7 @@ struct FreeAppView: View {
             Spacer()
             
             VStack {
-                Text("1")
+                Text("\(rank + 1)")
                     .font(.title3)
                 Spacer()
             }
@@ -48,11 +50,5 @@ struct FreeAppView: View {
             }
         }
         .padding([.leading, .trailing])
-    }
-}
-
-struct FreeAppView_Previews: PreviewProvider {
-    static var previews: some View {
-        FreeAppView()
     }
 }
