@@ -32,7 +32,19 @@ struct GameView: View {
                 }
                 .padding([.leading, .trailing])
                 
-                AppRankView()
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(0..<6) { _ in
+                            VStack {
+                                ForEach(0..<3) { _ in
+                                    AppRankView()
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+//                AppRankView()
                 
                 .navigationTitle("게임")
                 .navigationBarItems(trailing: Image(systemName: "person.circle"))
