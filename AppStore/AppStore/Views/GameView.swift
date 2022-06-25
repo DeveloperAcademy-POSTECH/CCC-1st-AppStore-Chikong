@@ -43,9 +43,7 @@ struct GameView: View {
                             }
                         }
                     }
-                }
-//                AppRankView()
-                
+                }                
                 .navigationTitle("게임")
                 .navigationBarItems(trailing: Image(systemName: "person.circle"))
             }
