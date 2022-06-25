@@ -28,7 +28,9 @@ struct GameView: View {
                         .fontWeight(.heavy)
                     Spacer()
                     
-                    Button("모두 보기") {}
+                    NavigationLink("모두 보기", destination: PopularView())
+                        .foregroundColor(Color(.systemBlue))
+//                    Button("모두 보기") {}
                 }
                 .padding([.leading, .trailing])
                 
@@ -43,7 +45,7 @@ struct GameView: View {
                             }
                         }
                     }
-                }                
+                }
                 .navigationTitle("게임")
                 .navigationBarItems(trailing: Image(systemName: "person.circle"))
             }
