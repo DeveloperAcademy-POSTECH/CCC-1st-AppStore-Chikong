@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GameView: View {
+    @State private var presentPopup = false
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
@@ -27,6 +28,7 @@ struct GameView: View {
                     Text("무료 게임 순위")
                         .font(.title)
                         .fontWeight(.heavy)
+                    
                     Spacer()
                     
                     NavigationLink("모두 보기", destination: PopularView())
@@ -36,10 +38,10 @@ struct GameView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
-                        ForEach(0..<6) { _ in
+                        ForEach(0..<5) { rankIdx in
                             VStack {
                                 ForEach(0..<3) { idx in
-                                    AppRankView()
+                                    AppRankView(rank: rankIdx * 3 + idx)
                                     if idx != 2 {
                                         Divider()
                                             .padding()
@@ -49,6 +51,7 @@ struct GameView: View {
                         }
                     }
                 }
+                .padding(.horizontal)
                 .navigationTitle("게임")
                 .navigationBarItems(trailing: Image(systemName: "person.circle"))
             }

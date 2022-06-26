@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct AppRankView: View {
+struct AppRankView: View {    
+    let rank: Int
+    
     var body: some View {
         HStack {
             Image(systemName: "gamecontroller.fill")
@@ -15,7 +17,7 @@ struct AppRankView: View {
             Spacer()
             
             VStack {
-                Text("1")
+                Text("\(rank + 1)")
                     .font(.title3)
                 Spacer()
             }
@@ -25,6 +27,8 @@ struct AppRankView: View {
                     .font(.title3)
             
                 Text("사냥의 재미를 찢는다! 헌터의 혼을 불태워라!")
+                    .lineLimit(0)
+                    .multilineTextAlignment(.leading)
                     .font(.caption)
                     .foregroundColor(Color(.systemGray))
             }
@@ -48,11 +52,5 @@ struct AppRankView: View {
             }
         }
         .padding([.leading, .trailing])
-    }
-}
-
-struct AppRankView_Previews: PreviewProvider {
-    static var previews: some View {
-        AppRankView()
     }
 }
