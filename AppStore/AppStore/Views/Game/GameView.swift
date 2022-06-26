@@ -15,10 +15,13 @@ struct GameView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         ForEach(0..<11) { _ in
-                            AppContensView()
+                            AppContentsView()
                         }
                     }
                     .padding(.horizontal)
+                }
+                .onAppear {
+                    UIScrollView.appearance().isPagingEnabled = true
                 }
                 
                 Divider()

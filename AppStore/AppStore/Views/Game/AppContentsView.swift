@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppContensView: View {
+struct AppContentsView: View {
     var body: some View {
         // 데이터 적용할때 수정해야할 부분
         VStack(alignment: .leading) {
@@ -27,9 +27,9 @@ struct AppContensView: View {
     }
 }
 
-struct AppContensView_Previews: PreviewProvider {
+struct AppContentsView_Previews: PreviewProvider {
     static var previews: some View {
-        AppContensView()
+        AppContentsView()
             .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }
