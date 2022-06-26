@@ -20,9 +20,6 @@ struct GameView: View {
                     }
                     .padding(.horizontal)
                 }
-                .onAppear {
-                    UIScrollView.appearance().isPagingEnabled = true
-                }
                 
                 Divider()
                     .padding([.leading, .trailing])
