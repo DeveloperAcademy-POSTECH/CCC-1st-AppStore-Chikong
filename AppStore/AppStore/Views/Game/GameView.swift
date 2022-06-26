@@ -44,7 +44,7 @@ struct GameView: View {
                                     AppRankView(rank: rankIdx * 3 + idx)
                                     if idx != 2 {
                                         Divider()
-                                            .padding()
+                                            .padding([.leading], 50)
                                     }
                                 }
                             }
